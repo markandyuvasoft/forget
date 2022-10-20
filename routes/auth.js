@@ -58,7 +58,7 @@ const sendset = async (name, email, token) => {
         from: 'amandighe0@gmail.com',
         to: email,
         subject: 'reset password',
-        html: '<p> hii ' + name + ', plz copy the link and <a href="https://adsasas.herokuapp.com/reset?token=' + token + '"> reset your password</a>'
+        html: '<p> hii ' + name + ', plz copy the link and <a href="https://dasadsdas.herokuapp.com/reset?token=' + token + '"> reset your password</a>'
     };
 
     transporter.sendMail(mailoptions, function (err, info) {
