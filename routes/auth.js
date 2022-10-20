@@ -47,15 +47,15 @@ const sendset = async (name, email, token) => {
         port: 465,                     // true for 465, false for other ports
         host: "smtp.gmail.com",
         auth: {
-            user: '',
-            pass: ''
+              user: process.env.USER_id,
+                pass: process.env.USER_PASS,
         },
         secure: true,
     });
 
     const mailoptions = {
 
-        from: '',
+        from:  process.env.USER_id,
         to: email,
         subject: 'reset password',
         html: '<p> hii ' + name + ', plz copy the link and <a href="https://dasadsdas.herokuapp.com/reset?token=' + token + '"> reset your password</a>'
